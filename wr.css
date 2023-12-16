@@ -12,7 +12,7 @@
 	text-shadow: 2px 2px 5px white;
 	}
 	.Background{
-	background:linear-gradient(to top, rgba(240, 230, 140, 0.4), rgba(240, 230, 140, 0.4)), url('panorama.jpg');
+	background:linear-gradient(to top, rgba(240, 230, 140, 0.4)), url('panorama.jpg');
 	background-size: cover;
 	height: 275px;
 	text-align: center;
