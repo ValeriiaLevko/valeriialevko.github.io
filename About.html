@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="ab.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+    <body>
+               <div id="About">
+            <div class="Background">
+                <div class="logo">Portfolio</div>
+                    <div class="content-wrap">  
+               <nav class='header-menu'>
+                <div class="main-menu">
+                    <div id='menuIcons' class="main-menu_icons">
+                        <i id='iconOpen' class="fa-solid fa-bars"></i>
+                        <i id='iconClose' ></i>
+                    </div>
+                    <ul id='mainMenu' class="menu-list hide">
+                        <li><a href="Writer.html">Головна</a></li>
+                        <li><a href="Gallery.html">Галерея</a></li>
+                        <li><a href="Books.html">Книги</a></li>
+                        <li><a href="Error 404.html">Про мене</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+                <div class="text1">
+                  <h1><strong>Про мене</strong></h1>
+              </div>
+    </div>
+</div>
+    <div id="Biography" class="animated">
+        <h2 class="bio">Моя біографія</h2>
+<p class="n"><img src="lucy.jpg" alt="Me and my cat" class="leftimg">
+Народилася 21 лютого 1993 року у місті Калуш, Івано-Франківського району. В 2000 році пішла у перший клас ЗОШ №7 м. Калуш, нині Ліцей №7. З дитинства була тяга до малювання, тому у позаурочний час відвідувала Центр худлжньої творчості. В більш старшому віці - часні уроки у художниці Чаборик Тетяни. Змалку мріяла стати вчителем, пізніше дизайнером одягу. З 2007 року почала писати перші вірші і виношувати ідеї для повноцінної книги. Перша частина "В сутінках..." була написана у 2012 році, а в 2017 вперше опублікована на Літнеті.</p>
+<p class="t"><img src="teacher.jpg" alt="I'm at work" class="rightimg">
+В 2010 році вступила у Прикарпатський університет ім. В. Стефаника і здобула кваліфікацію спеціаліста за напрямком дизайн. В 2015 році ще раз вступила у Прикарпатський університет і здобула кваліфікацію спеціаліста за напрямком "викладач історії". З 2017 року по теперішній час праццюю в Навчально-реабілітаційному центрі Івано-Франківської міської ради. Також, з 2023 рокупрацюю в приватній школі "Янголи поруч" вчителем малювання.</p>
+</div>
+           <div id="Skills" class="animated">
+            <p class="skill">Короткі відомості</p>
+            <p class="ski">
+            <img class= "tanya" src="cafe.jpg" alt="Tetyana Kuz"></p>
+            <div class="pro">
+            <p class="profile">Профіль</p>
+            <p class="Engineer">Вчитель, Письменник, Художник </p>
+            </div>
+            <div class="fro">
+                <div class="tol">
+                    <p class="tool">ПІБ</p>
+                    <p class="boot">Кузь Тетяна Мирославівна</p>
+                </div>
+                <div class="tols">
+                    <p class="tools">Місто</p>
+                    <p class="adobe">Калуш</p>
+                </div>
+            <div class="tolse">
+                <p class="toolse">Освіта</p>
+                <p class="pen">Університет ім. В. Стефаника</p>
+        </div>
+        <button id="openModalBtn">Більше</button>
+        <div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeModalBtn">&times;</span>
+        <p>Освіта:</p>
+        <p>ЗОШ №7 м. Калуш, Прикарпатский национальный университет им. Василия Стефаника</p>
+        <p>Кваліфікація:</p>
+        <p>спеціаліст за напрямком дизайн та викладач історії</p>
+        <p>Жанри книг:</p>
+        <p>Фентезі, Романтика, Детектив</p>
+        <p>Жанри книг:</p>
+        <p>Акрил, Гуаш, Масло</p>
+    </div>
+</div>
+
+    </div>
+</div>
+<script>
+         const sections = document.querySelectorAll('.animated');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                }
+            });
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+    const iconOpen = document.getElementById('iconOpen')
+const iconClose = document.getElementById('iconClose')
+const mainMenu = document.getElementById('mainMenu')
+const menuIcons = document.getElementById('menuIcons')
+
+menuIcons.addEventListener('click', ()=> {
+    iconOpen.classList.toggle('hide')
+    iconClose.classList.toggle('hide')
+    mainMenu.classList.toggle('hide')
+})
+
+document.addEventListener("DOMContentLoaded", function () {
+    var openModalBtn = document.getElementById("openModalBtn");
+    var closeModalBtn = document.getElementById("closeModalBtn");
+    var modal = document.getElementById("myModal");
+
+    openModalBtn.addEventListener("click", function () {
+        modal.style.display = "block";
+    });
+
+    closeModalBtn.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+
+    // Закриття модального вікна при кліку за межами його контенту
+    window.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+});
+    </script>
+	    </body>
+</html>

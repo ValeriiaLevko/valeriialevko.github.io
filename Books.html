@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Books</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="bk.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+    <body>
+        <div id="Books">
+            <div class="Background">
+            	<div class="logo">Portfolio</div>
+            		<div class="content-wrap">	
+               <nav class='header-menu'>
+				<div class="main-menu">
+					<div id='menuIcons' class="main-menu_icons">
+						<i id='iconOpen' class="fa-solid fa-bars"></i>
+						<i id='iconClose' ></i>
+					</div>
+					<ul id='mainMenu' class="menu-list hide">
+						<li><a href="Writer.html">Головна</a></li>
+						<li><a href="About.html">Про мене</a></li>
+						<li><a href="Gallery.html">Галерея</a></li>
+                        <li><a href="Error 404.html">Книги</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+                <div class="text1">
+                  <h1><strong>Книги</strong></h1>
+              </div>
+	</div>
+</div>
+	<div id="Book">
+	    <h2 class="portf">Книги</h2>
+		<div id="rotator">
+        <div id="image-container">
+            <img id="photo" src="" alt="">
+            <div id="image-info"></div>
+        </div>
+        <div id="nav-buttons">
+            <button id="prev">↤</button>
+            <button id="next">↦</button>
+        </div>
+    </div>	
+</div>
+	<div id="Unfinished">
+	    <h2 class="unfini">Незакінчені книги</h2>
+		<div id="rot">
+        <div id="imcontainer">
+            <img id="photo1" src="image3.jpg" alt="Unfinished book">
+            <div id="info">
+            	У сутінках зійде місяць, і світ зміниться. Ожилі легенди.
+            </div>
+            <div class= "ano">Життя перевернулось. Омут затягнутий. Війна виграна, чи все ж таки ні? Світ зійшов з розуму. Під безжальним вітром часу все змішалося, а чи має бути так? Того, що трапилось, не повернути. Рівновага … чи ні? Хто відповість за злиття світів? За те, як люди довідалися, що не лише їм належить земля. Міжсвітові дірки по всій планеті, сотні спроб знайти хоча б сліди друзів, що зникли безвісти. Безуспішно. Спроби закрити ці дірки – марно. Де шукати ключ розгадки чи допомогу? Як не збожеволіти в цьому божевільному світі ...?</div>
+        </div>
+    </div>	
+</div>
+	<div id="Idea">
+	    <h2 class="kom">Залиште свій коментар</h2>
+		    <div class="comment-container">
+           <textarea id="comment" rows="4" cols="50" placeholder="Ваш коментар..."></textarea>
+        <br>
+        <input type="text" id="signature" placeholder="Ваш підпис">
+        <br>
+        <button onclick="addComment()">Додати коментар</button>
+
+        <div id="comments">
+            <!-- Коментарі тут будуть відображатися -->
+        </div>
+    </div>
+</div>
+	<script src='script.js'></script>
+    <script src='script1.js'></script>
+	   
+	    	    <script>
+        let currentIndex = 0;
+        const imagesArray = [
+            {
+                path: 'image1.jpg',
+                title: 'У сутінках зійде місяць, і світ зміниться. Шлях вовка. ',
+                description: 'Норідж - місто, до якого мене зовсім не тягнуло.Прохолодний і порожній, із запахом хвої, він манив до себе, але й відштовхував одночасно.Я розуміла, що там ще більше пізнаю глибини своєї самотності, таємниці яких хотілося б не знати – і ці чорні очі, через які хотіла б потонути – у найглибших диявольських котлах.',
+            },
+            {
+                path: 'image2.jpg',
+                title: 'У сутінках зійде місяць, і світ зміниться. Істинно прокляття.',
+                description: 'Коли здається, що все позаду, і ти готова зализувати душевні рани, у житті зявляється хтось, хто не дасть забити минуле... Як уже зауважила Емма, доля хоче викувати з неї меч незламного Духа! І чим більше в ній болю, чим більше ударів завдає по ньому життя, тим сильнішим воно стає... Скільки ще страждань має перенести її тендітна душа, щоб знову відчути себе щасливою?!',
+            },
+        ];
+        const photo = document.getElementById('photo');
+        const imageInfo = document.getElementById('image-info');
+        const prevButton = document.getElementById('prev');
+        const nextButton = document.getElementById('next');
+        const imageCount = document.getElementById('image-count');
+
+        function showImage(index) {
+            const image = imagesArray[index];
+            photo.src = image.path;
+            imageInfo.innerHTML = `<p>${image.title}</p><p>${image.description}</p>`;
+            imageCount.textContent = `${index + 1} / ${imagesArray.length}`;
+        }
+
+        prevButton.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                showImage(currentIndex);
+            }
+        });
+        nextButton.addEventListener('click', () => {
+            if (currentIndex < imagesArray.length - 1) {
+                currentIndex++;
+                showImage(currentIndex);
+            }
+        });
+        showImage(currentIndex);
+
+    </script>
+     </body>
+</html>

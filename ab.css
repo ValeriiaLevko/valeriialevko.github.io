@@ -1,0 +1,574 @@
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#About{
+    max-width:100%;
+    height: 275px;
+    left: 0px;
+    top: 0px;
+    color: black;
+    text-shadow: 2px 2px 5px white;
+    }
+    .Background{
+    background:linear-gradient(to top, rgba(240, 230, 140, 0.4), rgba(240, 230, 140, 0.4)), url('bio.jpg');
+    background-size: cover;
+    height: 275px;
+    text-align: center;
+    min-width:320px;
+    }
+.content-wrap {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main-menu {
+    position: relative;
+    top: -33px;
+    left: 5px;
+    color: black;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    align-items: center;
+}
+
+.menu-list {
+    list-style: none;
+    position: absolute;
+    top: 28px;
+    right: 30px;
+    left: 0;
+    color: black;
+    font-size: 24px;
+    text-shadow: 2px 2px 5px black;
+}
+a, a:active, .a:visited{
+    color: black;
+    text-shadow: 2px 2px 5px black;
+    text-decoration:none;
+    text-shadow: none;
+}
+
+.main-menu i {
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+#iconClose{
+    display: none;
+}
+
+.logo{
+    padding-top: 36px;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+.text1, .text2, .text3{
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+}
+.text1{
+    padding-top: 15px;
+    font-size: 20px;
+    line-height: 24px;
+}
+.text2{
+    padding-top: 22px;
+    font-size: 13px;
+    line-height: 16px;
+    }
+    
+
+    @media(min-width: 1024px){
+        #About{
+            top: 0px;
+            height: 960px;
+        }
+        .main-menu i {
+        display: none;
+    }
+    .menu-list {
+        position: static;
+        display: flex;
+
+    }
+    .menu-list li:not(:last-child) {
+        margin-right: 50px;
+    }
+    .header-menu {
+        height: 60px;
+    }
+    a, a:active, .a:visited{
+    color: black;
+    text-shadow: 2px 2px 5px white;
+
+}
+    .content-wrap {
+        position: absolute;
+        width: 529px;
+        height: 22px;
+        right: 161px;
+        top: 105px;
+        font-family: 'Libre Franklin';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        float: right;
+    }
+
+        .Background{
+            height: 960px;
+            background-size: cover;
+        }
+        .logo{
+            width: 116px;
+            height: 29px;
+            padding-left: 161px;
+            padding-top: 93px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+        }
+        .text1{
+            width: 1000px;
+            height: 78px;
+            padding-left: 161px;
+            padding-top: 230px;
+            font-size: 64px;
+            line-height: 78px;
+            display: flex;
+            align-items: center;
+        }
+        .text2{
+            width: 500px;
+            height: 29px;
+            padding-left: 151px;
+            padding-top: 70px;
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+
+    #Biography{
+    width: 100%;
+    height: 1300px;
+    left: 0px;
+    top: 1240px;
+    background: black;
+    color: Khaki;
+    }
+.bio{
+    width: 100%;
+    padding-top: 30px;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    }
+    .t, .n{
+        margin-top: 30px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .leftimg {
+        height: 280px;
+        float:left; /* Вирівнювання по лівому краю */
+        margin: 7px 15px 15px 5px; /* Відступи навколо картинки */
+    }
+    .rightimg {
+        height: 350px;
+
+        float: right; /* Вирівнювання по правому краю */
+        margin: 0px 20px 15px 30px; /* Відступи навколо картинки */
+    }
+    @media(min-width: 420px){
+        #Biography{
+            height: 1280px;
+            left: 0px;
+            top: 1240px;
+
+        }
+        .leftimg {
+        margin: 7px 15px 15px 50px; /* Відступи навколо картинки */
+    }
+    .rightimg {
+        height: 420px;
+        margin: 0px 60px 15px 30px; /* Відступи навколо картинки */
+    }
+    }
+        
+            @media(min-width: 480px){
+        #Biography{
+            height: 1104px;
+            left: 0px;
+            top: 1240px;
+        }
+        .leftimg {
+        margin: 0px 15px 5px 15px;
+    }
+    .rightimg {
+        height: 400px;
+        margin: 0px 15px 15px 5px; /* Відступи навколо картинки */
+    }
+    }
+    @media(min-width: 490px){
+        #Biography{
+            height: 985px;
+            left: 0px;
+            top: 1240px;
+
+        }
+    }
+    @media(min-width: 550px){
+        #Biography{
+            height: 924px;
+            left: 0px;
+            top: 1240px;
+
+        }
+        .rightimg {
+        height: 420px;
+        margin: 0px 15px 15px 15px; /* Відступи навколо картинки */
+    }
+    }
+    @media(min-width: 680px){
+        #Biography{
+            height: 864px;
+            left: 0px;
+            top: 1240px;
+
+        }
+    .leftimg {
+        margin: 0px 30px 25px 15px;
+    }
+}
+@media(min-width: 710px){
+        #Biography{
+            height: 894px;
+            left: 0px;
+            top: 1240px;
+
+        }
+        .leftimg{
+            height: 315px;
+        }
+    .rightimg {
+        height: 450px;
+    }
+    }
+    @media(min-width: 820px){
+        #Biography{
+            height: 734px;
+            left: 0px;
+            top: 1240px;
+
+        }
+        .leftimg{
+            height: 245px;
+        }
+    .rightimg {
+        height: 400px;
+    }
+    }
+            @media(min-width: 1024px){
+        #Biography{
+            height: 1020px;
+            left: 0px;
+            top: 2527px;
+
+        }
+        .bio{
+            height: 29px;
+            padding-left: 161px;
+            padding-top: 93px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: left;
+        }
+    .n, .t{
+        padding-top: 90px;
+        margin-right: 80px;
+        margin-left: 20px;
+        font-size: 18px;
+            line-height: 30px;
+    }
+    .leftimg {
+        height: 350px;
+        float:left; /* Вирівнювання по лівому краю */
+        margin: -20px 15px 25px 100px; /* Відступи навколо картинки */
+    }
+    .rightimg {
+        height: 450px;
+        float: right; /* Вирівнювання по правому краю */
+        margin: -20px 30px 15px 30px; /* Відступи навколо картинки */
+    }
+    .t{
+        margin-left: 160px;
+    }
+}
+    #Skills{
+    max-width:100%;
+    height: 600px;
+    left: 0px;
+    top: 568px;
+    background: Khaki;
+    }   
+.skill{
+    width: 100%;
+    padding-top:30px;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 25px;
+    color: black;
+    text-align: center;
+    }
+    .ski{
+    text-align:center;
+    }
+img{
+    height: 300px;
+    text-align: center;
+    margin-top: 30px;
+    }
+.pro{
+    display:flex;
+    justify-content:center;
+    height: 25px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    color: black;
+    }
+.profile{
+    position: relative;
+    right: 20px;
+}
+.Engineer{
+    font-weight: 400;
+    position: relative;
+    left:5px;
+    }
+    .fro{
+    height: 30px;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    }
+.tol{
+    display:flex;
+    justify-content:center;
+    height: 25px;
+    padding-top: 10px;
+    color: black;
+    margin-right:20px ;
+    }         
+.tool{
+    width: 31px;
+    height: 25px;
+    position: relative;
+    right: 40px;
+    }
+.boot{
+    height: 25px;
+    position: relative;
+    left: 10px;
+    }
+.tols{
+    display:flex;
+    justify-content:center;
+    height: 25px;
+    padding-top: 10px;
+    color: black;
+    margin-right:20px ;
+    }         
+.tools{
+    width: 31px;
+    height: 25px;
+    position: relative;
+    right: 100px;
+    }
+.adobe{
+    height: 25px;
+    position: relative;
+    right: 50px;
+    }
+.tolse{
+    display:flex;
+    justify-content:center;
+    height: 25px;
+    padding-top: 10px;
+    color: black;
+    margin-right:20px ;
+    }       
+.toolse{
+    width: 31px;
+    height: 25px;
+    position: relative;
+    right: 33px;
+    }
+.pen{
+    height: 25px;
+    position: relative;
+    left: 18px;
+    }  
+.boot, .adobe, .pen{
+font-weight: 400;
+}
+button{
+	margin-left: 45%;
+	margin-top: 50px;
+	background-color: khaki;
+	border: khaki;
+	border-bottom:0.1rem solid black;
+	font-size: 14px;
+} 
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: khaki;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+  
+@media(min-width: 1024px){
+    #Skills{
+            height: 693px;
+            left: 0px;
+            top: 1312px;
+    }
+    .skill{
+            width: 400px;
+            height: 29px;
+            padding-left: 120px;
+            padding-top: 93px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+    }
+    .tanya{
+    width: 290px;
+    height: 440px;
+    position: absolute;
+    left: 161px;
+    top: 160px;
+    }
+    .profile, .tool, .tools, .toolse{
+    height: 25px;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 25px;
+    }
+    .profile{
+    margin-left: 385px;
+    margin-top: 133px;
+    }
+    .Engineer{
+    height: 25px;
+    padding-left: 20px;
+    padding-top: 133px;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    }
+    .boot, .adobe, .pen{
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    }
+    .fro{
+    margin-left:480px;
+    padding-top: 160px;
+
+        }
+    .tool, .tools, .toolse, .boot, .adobe, .pen{
+        padding-top: 30px;  }
+        .tols{
+            padding-top: 30px;
+        }
+        .tolse{
+            padding-top: 50px;
+        }
+    .tool{
+        position: relative;
+        right:85px;
+    }
+    .boot{
+        padding-right: 70px;
+    }
+    .tools{
+        position: relative;
+        right:145px;
+    }
+    .adobe{
+        padding-right: 130px;
+    }
+    .toolse{
+        position: relative;
+        right: 75px;
+    }
+    .pen{
+        position: relative;
+        padding-right: 60px;
+    }
+    button{
+    	font-size: 17px;
+    	margin-top: 200px;
+    }
+    .modal{
+    	font-size: 19px;
+    }
+    }
+      .animated {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 2.5s ease, transform 2.5s ease;
+        }
+
+        .animated.in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }

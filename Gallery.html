@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gallery</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="gl.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+    <body>
+        <div id="Gallery">
+            <div class="Background">
+            	<div class="logo">Portfolio</div>
+            		<div class="content-wrap">	
+               <nav class='header-menu'>
+				<div class="main-menu">
+					<div id='menuIcons' class="main-menu_icons">
+						<i id='iconOpen' class="fa-solid fa-bars"></i>
+						<i id='iconClose' ></i>
+					</div>
+					<ul id='mainMenu' class="menu-list hide">
+						<li><a href="Writer.html">Головна</a></li>
+						<li><a href="About.html">Про мене</a></li>
+						<li><a href="Books.html">Книги</a></li>
+                        <li><a href="Error 404.html">Галерея</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+                <div class="text1">
+                  <h1><strong>Галерея</strong></h1>
+              </div>
+	</div>
+</div>
+	<div id="Drawing">
+	    <h2 class="draw">Картини</h2>
+		<div class="container">
+  <div class="slide"><img class="photo" src="i8.jpg" alt="Yeshua Ha-Notzri"><p class="text">Ієшуа Га-Ноцрі</p></div>
+  <div class="slide"><img class="photo" src="i9.jpg" alt="Ship"><p class="text">Корабель</p></div>
+  <div class="slide"><img class="photo" src="i10.jpg" alt="Woman with a rose"><p class="text">Жінка із розою</p></div>
+  <div class="slide"><img class="photo" src="i11.jpg" alt="Hela"><p class="text">Хель</p></div>
+  <div class="slide"><img class="photo" src="i12.jpg" alt="Demon"><p class="text">Демон</p></div>
+</div>	
+</div>
+	<div id="Tshirt">
+	    <h2 class="tsh">Футболки</h2>
+		<div class="cont">
+ <div class="slide"><img class="photo" src="i1.jpg" alt="Woman and sun"><p class="text">Жінка та сонце</p></div>
+  <div class="slide"><img class="photo" src="i2.jpg" alt="Femida"><p class="text">Феміда</p></div>
+  <div class="slide"><img class="photo" src="i3.jpg" alt="Girl with flowers"><p class="text">Дівчина з квітами</p></div>
+  <div class="slide"><img class="photo" src="i4.jpg" alt="Ukrainian witch"><p class="text">Українська відьма</p></div>
+  <div class="slide"><img class="photo" src="i5.jpg" alt="Dove of peace"><p class="text">Голуб миру</p></div>
+  <div class="slide"><img class="photo" src="i6.jpg" alt="Woman"><p class="text">Жінка</p></div>
+</div>  
+</div>
+	<div id="Idea">
+	    <h2 class="kom">Залиште свій коментар</h2>
+	    <div class="comment-container">
+           <textarea id="com" rows="4" cols="50" placeholder="Ваш коментар..."></textarea>
+        <br>
+        <input type="text" id="sig" placeholder="Ваш підпис">
+        <br>
+        <button onclick="addComment()">Додати коментар</button>
+
+        <div id="vid">
+        </div>
+    </div>
+</div>
+	<script src='script.js'></script>
+	   
+	    	    <script>
+        function addComment() {
+            var commentText = document.getElementById('com').value;
+            var signatureText = document.getElementById('sig').value;
+
+            if (commentText.trim() === '' || signatureText.trim() === '') {
+                alert('Будь ласка, введіть коментар та підпис.');
+                return;
+            }
+            var comment = {
+                text: commentText,
+                signature: signatureText,
+                timestamp: new Date().toLocaleString() 
+            };
+            var comments = JSON.parse(localStorage.getItem('vid')) || [];
+            comments.push(comment);
+            localStorage.setItem('vid', JSON.stringify(comments));
+            displayComments();
+        }
+
+        function displayComments() {
+            var commentsContainer = document.getElementById('vid');
+            var comments = JSON.parse(localStorage.getItem('vid')) || [];
+            commentsContainer.innerHTML = '';
+            comments.forEach(function(comment) {
+                var commentElement = document.createElement('div');
+                commentElement.innerHTML = '<strong>' + comment.signature + ':</strong> ' + comment.text + ' <em>(' + comment.timestamp + ')</em>';
+                commentsContainer.appendChild(commentElement);
+            });
+        }
+        window.onload = displayComments;
+    </script>
+     </body>
+</html>

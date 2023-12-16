@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="wr.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+    <body>
+        <div id="HeroSection">
+            <div class="Background">
+            	<div class="logo">Portfolio</div>
+            		<div class="content-wrap">	
+               <nav class='header-menu'>
+				<div class="main-menu">
+					<div id='menuIcons' class="main-menu_icons">
+						<i id='iconOpen' class="fa-solid fa-bars"></i>
+						<i id='iconClose' ></i>
+					</div>
+					<ul id='mainMenu' class="menu-list hide">
+						<li><a href="Error 404.html">Головна</a></li>
+						<li><a href="About.html">Про мене</a></li>
+						<li><a href="Books.html">Книги</a></li>
+						<li><a href="Gallery.html">Галерея</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+                <div class="text1">
+                  <p><strong>Привіт, Я Тетяна Кузь</strong></p>
+                </div>
+                <div class="text2">
+                  <p>Письменниця з Калуша, Україна</p>
+                </div>
+              </div>
+	</div>
+         <div id="About">
+	        <p class="ab"><strong>Про мене</strong></p>
+			<p class="lorem">Я починаюча письменниця та художниця з Калуша. Навчалася у Прикарпатському національному університеті ім. В. Стефаника. Працювала у художній школі та школі для дітей з вадами. Маю досвід вчителя історії та мистецтва.
+			</p> 
+			<p class="lor">Пишу книги та вірші у жанрі фентезі, містика, романтика, детектив. Також займаюсь малюванням картин за допомогою акрилу, гуаші і масла.
+			</p> 
+		</div> 
+		<div id="Skills">
+		    <p class="skill">Навики</p>
+			<p class="ski">
+			<img class= "tanya" src="Tania.jpg" alt="Tetyana Kuz"></p>
+			<div class="pro">
+			<p class="profile">Профіль</p>
+			<p class="Engineer">Вчитель, Письменник, Художник </p>
+			</div>
+			<div class="fro">
+				<div class="tol">
+				    <p class="tool">Вчитель</p>
+					<p class="boot">Історія, Мистецтво</p>
+				</div>
+				<div class="tols">
+				    <p class="tools">Письменник</p>
+					<p class="adobe">Фентезі, Романтика, Детектив</p>
+				</div>
+			<div class="tolse">
+				<p class="toolse">Художник</p>
+				<p class="pen">Акрил, Гуаш, Масло</p>
+		</div>
+	</div>
+</div>
+		<div id="Books">
+	    <p class="portf">Книги</p>
+		<div id="rotator">
+        <div id="image-container">
+            <img id="photo" src=" " alt="">
+            <div id="image-info"></div>
+        </div>
+        <div id="nav-buttons">
+            <button id="prev">↤</button>
+            <button id="next">↦</button>
+        </div>
+        <p class="b"><a href="Books.html">Більше</a></p>
+    </div>	
+</div>
+		<div id="Gallery">
+	    <p class="paintings">Галерея</p>
+<div class="container">
+  <div class="slide"><img class="photo" src="i1.jpg" alt="Woman and sun"><p class="text">Жінка та сонце</p></div>
+  <div class="slide"><img class="photo" src="i2.jpg" alt="Femida"><p class="text">Феміда</p></div>
+  <div class="slide"><img class="photo" src="i3.jpg" alt="Girl with flowers"><p class="text">Дівчина з квітами</p></div>
+  <div class="slide"><img class="photo" src="i4.jpg" alt="Ukrainian witch"><p class="text">Українська відьма</p></div>
+  <div class="slide"><img class="photo" src="i5.jpg" alt="Dove of peace"><p class="text">Голуб миру</p></div>
+  <div class="slide"><img class="photo" src="i10.jpg" alt="Woman"><p class="text">Жінка</p></div>
+    <div class="slide"><img class="photo" src="i9.jpg" alt="Ship"><p class="text">Корабель</p></div>
+</div>
+	</div>
+	<div id="contact">
+	    <p class="get">Контакти</p>
+	    		<div class="back">
+		    <button onclick="topFunction()" id="chev" title="Go to top">^</button>
+		</div>
+		<div class="link">
+		    <p class="drib"><a href="https://www.tumblr.com/">Tumblr</a></p>
+			<p class="beh"><a href="https://www.pinterest.com/">Pinterest</a></p>
+			<p class="cod"><a href="https://discord.com/">Discord</a></p>
+			<p class="git"><a href="https://litnet.com/ru/tatlantida-u464807">Litnet</a></p>
+			<p class="med"><a href="http://www.poetryclub.com.ua/author.php?id=10021">Poetryclub</a></p>
+		</div>
+		<div class="email">
+		    <p class="em">tetyanakuz@gmail.com</p>
+			<p class="phone">+380958733717</p>
+		</div>
+		<div class="social">
+		    <p class="li"><a href="https://www.linkedin.com/">Linkedin</a></p>
+			<p class="face"><a href="https://www.facebook.com/tetyana.kuz">Facebook</a></p>
+			<p class="inst"><a href="https://www.instagram.com/">Instagram</a></p>
+			<p class="twit"><a href="https://twitter.com/">Twitter</a></p>
+		</div>
+	</div>
+	    <script>
+        window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("chev").style.display = "block";
+    } else {
+        document.getElementById("chev").style.display = "none";
+    }
+}
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0
+}
+
+
+        let currentIndex = 0;
+        const imagesArray = [
+            {
+                path: 'image1.jpg',
+                title: 'У сутінках зійде місяць, і світ зміниться. Шлях вовка.',
+                description: 'Тетяна Куз',
+            },
+            {
+                path: 'image2.jpg',
+                title: 'У сутінках зійде місяць, і світ зміниться. Істинно прокляття.',
+                description: 'Тетяна Куз',
+            },
+            {
+                path: 'image3.jpg',
+                title: 'У сутінках зійде місяць, і світ зміниться. Ожилі легенди.',
+                description: 'Тетяна Куз',
+            },
+        ];
+
+        const photo = document.getElementById('photo');
+        const imageInfo = document.getElementById('image-info');
+        const prevButton = document.getElementById('prev');
+        const nextButton = document.getElementById('next');
+        const imageCount = document.getElementById('image-count');
+
+        function showImage(index) {
+            const image = imagesArray[index];
+            photo.src = image.path;
+            imageInfo.innerHTML = `<p>${image.title}</p><p>${image.description}</p>`;
+            imageCount.textContent = `${index + 1} / ${imagesArray.length}`;
+        }
+
+        prevButton.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                showImage(currentIndex);
+            }
+        });
+
+        nextButton.addEventListener('click', () => {
+            if (currentIndex < imagesArray.length - 1) {
+                currentIndex++;
+                showImage(currentIndex);
+            }
+        });
+
+        showImage(currentIndex);
+    </script>
+<script src='script.js'></script>
+</body>
+</html>
