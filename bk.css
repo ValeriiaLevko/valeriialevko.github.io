@@ -1,0 +1,457 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#Books{
+	max-width:100%;
+	height: 275px;
+	left: 0px;
+	top: 0px;
+	color: black;
+	text-shadow: 2px 2px 5px white;
+	}
+	.Background{
+	background:linear-gradient(to top, rgba(240, 230, 140, 0.4), rgba(240, 230, 140, 0.4)), url('book.jpg');
+	background-size: cover;
+	height: 275px;
+	text-align: center;
+	min-width:320px;
+	}
+.content-wrap {
+	max-width: 780px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.main-menu {
+	position: relative;
+	top: -33px;
+	left: 5px;
+	color: black;
+}
+
+.header-menu {
+	display: flex;
+	justify-content: space-between;
+	height: 30px;
+	align-items: center;
+}
+
+.menu-list {
+	list-style: none;
+	position: absolute;
+	top: 28px;
+	right: 30px;
+	left: 0;
+	color: black;
+	font-size: 24px;
+	text-shadow: 2px 2px 5px black;
+}
+a, a:active, .a:visited{
+    color: DarkGoldenRod;
+    text-shadow: 2px 2px 5px black;
+	text-decoration:none;
+	text-shadow: none;
+}
+
+.main-menu i {
+	cursor: pointer;
+}
+
+.hide{
+	display: none;
+}
+#iconClose{
+	display: none;
+}
+
+.logo{
+	padding-top: 36px;
+	font-family: 'Libre Franklin';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+}
+.text1, .text2, .text3{
+	font-family: 'Libre Franklin';
+	font-style: normal;
+	font-weight: 400;
+	color: black;
+}
+.text1{
+	padding-top: 15px;
+	font-size: 20px;
+	line-height: 24px;
+}
+.text2{
+	padding-top: 22px;
+	font-size: 13px;
+	line-height: 16px;
+	}
+	
+
+	@media(min-width: 1024px){
+		#Books{
+			top: 0px;
+			height: 768px;
+		}
+		.main-menu i {
+		display: none;
+	}
+	.menu-list {
+		position: static;
+		display: flex;
+
+	}
+	.menu-list li:not(:last-child) {
+		margin-right: 50px;
+	}
+	.header-menu {
+		height: 60px;
+	}
+	a, a:active, .a:visited{
+    color: khaki;
+}
+	.content-wrap {
+		position: absolute;
+		width: 529px;
+		height: 22px;
+		right: 161px;
+		top: 105px;
+		font-family: 'Libre Franklin';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 22px;
+	}
+
+		.Background{
+			height: 768px;
+			background-size: cover;
+		}
+		.logo{
+			width: 116px;
+			height: 29px;
+			padding-left: 161px;
+			padding-top: 93px;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 29px;
+		}
+		.text1{
+			width: 1000px;
+			height: 78px;
+			padding-left: 161px;
+			padding-top: 230px;
+			font-size: 64px;
+			line-height: 78px;
+			display: flex;
+			align-items: center;
+		}
+		.text2{
+			width: 500px;
+			height: 29px;
+			padding-left: 151px;
+			padding-top: 70px;
+			font-size: 24px;
+			line-height: 29px;
+		}
+	}
+
+	#Book{
+	width: 100%;
+	height: 804px;
+	left: 0px;
+	top: 1240px;
+	background: black;
+	color: Khaki;
+	}
+.portf{
+	width: 100%;
+	padding-top: 30px;
+	font-family: 'Libre Franklin';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	}
+	#rotator {
+            text-align: center;
+        }
+
+        #image-container {
+            position: relative;
+            top: 50px;
+        }
+
+        #image-container img {
+            max-width: 100%;
+            max-height: 500px;
+
+        }
+        #image-info{
+        	margin-top: 55px;
+        	margin-left: 10px;
+        	margin-right: 10px;
+        }
+        #prev, #next{
+        	color: khaki;
+            background-color: black;
+            border:none;
+            font-size: 35px;
+            margin: 53px;
+        }
+	@media(min-width: 1024px){
+		#Book{
+			height: 722px;
+			left: 0px;
+			top: 2005px;
+
+		}
+		.portf{
+			height: 29px;
+			padding-left: 161px;
+			padding-top: 93px;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 29px;
+			text-align: left;
+		}
+		#rotator {
+            text-align: left;
+        }
+         #image-info{
+        	margin-top: 50px;
+        	margin-left: 550px;
+        	margin-right: 50px;
+        	font-weight: 700;
+			font-size: 24px;
+			line-height: 29px;
+        }
+        #image-container {
+            position: relative;
+        }
+
+        #image-container img {
+            max-width: 100%;
+            max-height: 400px;
+            height: 900px;
+            padding-left: 150px;
+           margin-bottom: -450px;
+        }
+
+        #nav-buttons {
+            margin-top: -10px;
+            padding-top: 120px;
+            padding-left: 650px;
+        }
+    }
+    #Unfinished{
+	width: 100%;
+	height: 760px;
+	left: 0px;
+	top: 2044px;
+	background: khaki;
+	color: black;
+	}
+.unfini{
+	width: 100%;
+	padding-top: 30px;
+	font-family: 'Libre Franklin';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	}
+	#rot {
+            text-align: center;
+        }
+
+        #imcontainer {
+            position: relative;
+            top: 50px;
+        }
+
+        #imcontainer img {
+            max-width: 100%;
+            max-height: 500px;
+
+        }
+        #info{
+        	margin-top: 25px;
+        	margin-left: 10px;
+        	margin-right: 10px;
+        }
+        .ano{
+        	margin-top: 5px;
+        	margin-left: 15px;
+        	margin-right: 15px;
+        }
+	@media(min-width: 1024px){
+		#Unfinished{
+			height: 732px;
+			left: 0px;
+			top: 2727px;
+
+		}
+		.unfini{
+			height: 29px;
+			padding-left: 161px;
+			padding-top: 93px;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 29px;
+			text-align: left;
+		}
+		#rot{
+            text-align: left;
+        }
+         #info{
+        	margin-top: 40px;
+        	margin-left: 550px;
+        	margin-right: 50px;
+        	font-weight: 700;
+			font-size: 24px;
+			line-height: 29px;
+        }
+        #imcontainer {
+            position: relative;
+        }
+
+        #imcontainer img {
+            max-width: 100%;
+            max-height: 400px;
+            height: 900px;
+            padding-left: 150px;
+           margin-bottom: -450px;
+        }
+        .ano{
+        	margin-top: 5px;
+        	margin-left: 550px;
+        	margin-right: 40px;
+        	font-weight: 700;
+			font-size: 24px;
+			line-height: 29px;
+        }
+    }
+   #Idea{
+	width: 100%;
+	height: 554px;
+	left: 0px;
+	top: 1644px;
+	background: black;
+	}
+.kom{
+	width: 100%;
+	padding-top: 30px;
+	font-family: 'Libre Franklin';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+	color: khaki;
+	text-align: center;
+	 }
+.comment-container {
+    max-width: 600px;
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 35%;
+    color: khaki;
+}
+
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input{
+	 width: 60%;
+    height: 35%;
+}
+textarea{
+    width: 100%;
+    height: 35%;
+}
+
+button {
+    background-color: khaki;
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:orange;
+}
+#comments{
+	margin-top: 20px;
+}
+
+#commentsList{
+	margin-top: 20px;
+	font-size: 14px;
+	line-height: 29px;
+	color: khaki;
+	text-align: center;
+	 
+}
+
+		@media(min-width: 1024px){
+		#Idea{
+			height: 822px;
+			left: 0px;
+			top: 2527px;
+
+		}
+		.kom{
+			height: 29px;
+			padding-left: 161px;
+			padding-top: 93px;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 29px;
+			text-align: left;
+		}
+.comment-container {
+    max-width: 600px;
+    margin-top: 70px;
+			font-size: 19px;
+			line-height: 29px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+			font-size: 20px;
+			line-height: 29px;
+}
+
+input{
+	 width: 250px;
+    height: 50px;
+}
+textarea{
+    width: 100%;
+    height: 35%;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:orange;
+}
+	}
