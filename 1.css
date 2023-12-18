@@ -1,0 +1,2316 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#HeroSection{
+	max-width:100%;
+	height: 275px;
+	left: 0px;
+	top: 0px;
+	color: black;
+	text-shadow: 2px 2px 5px white;
+	}
+	.Background{
+	background:linear-gradient(to top, rgba(240, 230, 140, 0.4), rgba(240, 230, 140, 0.4)), url('panorama.jpg');
+	background-size: cover;
+	height: 275px;
+	text-align: center;
+	min-width:320px;
+	}
+.content-wrap {
+	max-width: 780px;
+	margin: 0 auto;
+	padding: 0 20px;
+	color: black;
+}
+.main-menu {
+	position: relative;
+	top: -33px;
+	left: 5px;
+	color: black;
+}
+.header-menu {
+	display: flex;
+	justify-content: space-between;
+	height: 30px;
+	align-items: center;
+}
+.menu-list {
+	list-style: none;
+	position: absolute;
+	top: 28px;
+	right: 30px;
+	left: 0;
+	color: black;
+	text-shadow: 2px 2px 5px black;
+	font-size: 21px;
+}
+a, a:active, .a:visited{
+    color: khaki;
+    text-shadow: 2px 2px 5px black;
+	text-decoration:none;
+}
+.main-menu i {
+	cursor: pointer;
+}
+.hide{
+	display: none;
+}
+#iconClose{
+	display: none;
+}
+.logo{
+	padding-top: 36px;
+	font-family: 'Libre Franklin';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+}
+.text1, .text2{
+	font-family: 'Libre Franklin';
+	font-style: normal;
+}
+.text1{
+	padding-top: 15px;
+	font-size: 20px;
+	line-height: 24px;
+}
+.text2{
+	padding-top: 22px;
+	font-size: 13px;
+	line-height: 16px;
+	}
+	@media(min-width: 1024px){
+		#HeroSection{
+			top: 0px;
+			height: 768px;
+		}
+		.main-menu i {
+		display: none;
+	}
+	.menu-list {
+		position: static;
+		display: flex;
+	}
+	.menu-list li:not(:last-child) {
+		margin-right: 50px;
+	}
+	.header-menu {
+		height: 60px;
+	}
+	a, a:active, .a:visited{
+    color: khaki;
+}
+	.content-wrap {
+		position: absolute;
+		width: 529px;
+		height: 22px;
+		right: 161px;
+		top: 105px;
+		font-family: 'Libre Franklin';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 22px;
+	}
+		.Background{
+			height: 768px;
+			background-size: cover;
+		}
+		.logo{
+			width: 116px;
+			height: 29px;
+			padding-left: 161px;
+			padding-top: 93px;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 29px;
+		}
+		.text1{
+			width: 1000px;
+			height: 78px;
+			padding-left: 161px;
+			padding-top: 230px;
+			font-size: 64px;
+			line-height: 78px;
+			display: flex;
+			align-items: center;
+		}
+		.text2{
+			width: 500px;
+			height: 29px;
+			padding-left: 151px;
+			padding-top: 70px;
+			font-size: 24px;
+			line-height: 29px;
+		}
+	}
+	#About{
+	max-width:100%;
+	height: 335px;
+	left: 0px;
+	top: 275px;
+	background:  black;
+	}
+.lorem, .lor, .ab{
+	width: 100%;
+	font-family: 'Libre Franklin';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+	color: khaki;
+	}
+.lorem{
+	text-align: justify;
+	font-weight: 400;
+	font-size: 12px;
+	padding-top: 30px;
+	padding-left: 34px;
+	padding-right: 34px;
+	}
+.lor{
+	padding-top:20px;
+	text-align: justify;
+	font-weight: 400;
+	font-size: 12px;
+	padding-left: 34px;
+	padding-right: 34px;
+	}
+.ab{
+	padding-top:30px;
+	text-align: center;
+	font-weight: 900;
+	font-size: 25px;
+	}
+@media(min-width: 1024px){
+		#About{
+			height: 544px;
+			left: 0px;
+			top: 768px;
+		}
+		.ab{
+			height: 29px;
+			text-align: left;
+			padding-left: 161px;
+			padding-top: 93px;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 29px;
+		}
+		.lorem, .lor{
+			height: 231px;
+			padding-left: 161px;
+			padding-right: 161px;
+			font-size: 18px;
+			line-height: 30px;
+		}
+		.lorem{
+			padding-top: 93px;
+		}
+		.lor{
+			padding-top: 3px;
+		}
+	}
+	#Skills{
+	max-width:100%;
+	height: 517px;
+	left: 0px;
+	top: 568px;
+	background: khaki;
+	}	
+.skill{
+	width: 100%;
+	padding-top:30px;
+	font-family: 'Libre Franklin';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 25px;
+	line-height: 25px;
+	color: black;
+	text-align: center;
+	}
+	.ski{
+	text-align:center;
+	}
+img{
+	height: 220px;
+	text-align: center;
+	padding-top: 30px;
+	}
+.pro{
+	display:flex;
+	justify-content:center;
+	height: 25px;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 25px;
+	color: black;
+	}
+.profile{
+	position: relative;
+	right: 10px;
+}
+.Engineer{
+	font-weight: 400;
+	position: relative;
+	left:25px;
+	}
+	.fro{
+	height: 30px;
+	font-family: 'Libre Franklin';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 25px;
+	}
+.tol{
+	display:flex;
+	justify-content:center;
+	height: 25px;
+	padding-top: 30px;
+	color: black;
+	margin-right:125px ;
+	}         
+.tool{
+	width: 31px;
+	height: 25px;
+	position: relative;
+	right: 1px;
+	}
+.boot{
+	height: 25px;
+	position: relative;
+	left: 60px;
+	}
+.tols{
+	display:flex;
+	justify-content:center;
+	height: 25px;
+	padding-top: 40px;
+	color: black;
+	margin-right:50px ;
+	}         
+.tools{
+	width: 31px;
+	height: 25px;
+	position: relative;
+	right: 5px;
+	}
+.adobe{
+	height: 25px;
+	position: relative;
+	left: 55px;
+	}
+.tolse{
+	display:flex;
+	justify-content:center;
+	height: 25px;
+	padding-top: 40px;
+	color: black;
+	margin-right:20px ;
+	}         
+.toolse{
+	width: 31px;
+	height: 25px;
+	position: relative;
+	right: 50px;
+	}
+.pen{
+	height: 25px;
+	position: relative;
+	left: 15px;
+	}
+.boot, .adobe, .pen{
+font-weight: 400;
+}
+@media(min-width: 1024px){
+	#Skills{
+			height: 693px;
+			left: 0px;
+			top: 1312px;
+	}
+	.skill{
+	        width: 73px;
+			height: 29px;
+			padding-left: 161px;
+			padding-top: 93px;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 29px;
+	}
+	.tanya{
+	width: 290px;
+	height: 340px;
+	position: absolute;
+	left: 161px;
+	top: 1510px;
+	}
+	.profile, .Front, .tool, .Design, .tools, .Research, .toolse{
+	height: 25px;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	}
+	.profile{
+	margin-left: 460px;
+	margin-top: 133px;
+	}
+	.Engineer{
+	height: 25px;
+	padding-left: 40px;
+	padding-top: 133px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 25px;
+	}
+	.boot, .adobe, .pen{
+	font-family: 'Libre Franklin';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	}
+	.fro{
+	margin-left:480px;
+	padding-top: 140px;
+		}
+	.tool, .tools, .toolse, .boot, .adobe, .pen{
+		padding-top: 20px;	}
+	.toolse{
+		position: relative;
+		right:55px;
+	}
+	.tool{
+		position: relative;
+		right:65px;
+	}
+	.tol{
+		padding-left: 20px;
+	}
+	.tools{
+		right: 45px;
+	}
+	.adobe{
+		padding-left: 10px;
+	}
+	.toolse{
+		position: relative;
+		right: 95px;
+	}
+	.pen{
+		padding-right: 15px;
+	}
+	}
+	#Books{
+	width: 100%;
+	height: 404px;
+	left: 0px;
+	top: 1240px;
+	background: black;
+	color: khaki;
+	}
+.portf{
+	width: 100%;
+	padding-top: 30px;
+	font-family: 'Libre Franklin';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	}
+	#rotator {
+            text-align: center;
+        }
+        #image-container {
+            position: relative;
+        }
+        #image-container img {
+            max-width: 100%;
+            max-height: 500px;
+        }
+        #image-info{
+        	margin-top: 20px;
+        }
+        #prev, #next{
+        	color: khaki;
+            background-color: black;
+            border:none;
+            font-size: 35px;
+        }
+        .b{
+        	display:none;
+        }
+	@media(min-width: 1024px){
+		#Books{
+			height: 722px;
+			left: 0px;
+			top: 2005px;
+		}
+		.portf{
+			height: 29px;
+			padding-left: 161px;
+			padding-top: 93px;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 29px;
+			text-align: left;
+		}
+		#rotator {
+            text-align: left;
+        }
+         #image-info{
+        	margin-top: 250px;
+        	margin-left: 650px;
+        	margin-right: 50px;
+        	font-weight: 700;
+			font-size: 24px;
+			line-height: 29px;
+        }
+        #image-container {
+            position: relative;
+        }
+        #image-container img {
+            max-width: 100%;
+            max-height: 400px;
+            height: 900px;
+            padding-left: 150px;
+           margin-bottom: -500px;
+        }
+        #nav-buttons {
+            margin-top: 10px;
+            padding-top: 150px;
+            padding-left: 650px;
+        }
+        .b{
+        	display: flex;
+        	margin-top: -30px;
+            margin-left: 850px;
+            font-weight: 700;
+			font-size: 24px;
+			line-height: 29px;
+        }
+	}
+#Gallery{
+	width: 100%;
+	height: 364px;
+	left: 0px;
+	top: 1644px;
+	background: khaki;
+	}
+.paintings{
+	width: 100%;
+	padding-top: 30px;
+	font-family: 'Libre Franklin';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+	color: black;
+	text-align: center;
+	 }
+.container {
+	margin: 20px auto;
+	padding-left: 70px;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    width: 300px;
+    -webkit-overflow-scrolling: touch; 
+}
+.slide {
+  flex: none;
+  scroll-snap-align: start;
+  width: 300px;
+  height: 280px;
+  text-align: center;
+}
+.text{
+	padding-top: 10px;
+	font-size: 17px;
+	line-height: 25px;
+}
+		@media(min-width: 1024px){
+		#Gallery{
+			height: 522px;
+			left: 0px;
+			top: 2527px;
+
+		}
+		.paintings{
+			height: 29px;
+			padding-left: 161px;
+			padding-top: 93px;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 29px;
+			text-align: left;
+		}
+		.text{
+			font-size: 20px;
+			line-height: 29px;
+		}
+		.container {
+			padding-top: 50px;
+			width: 1000px;
+}
+.slide {
+  flex: none;
+  scroll-snap-align: start;
+  width: 113px;
+  height: 360px;
+  text-align: center;
+
+	}
+}
+	#contact{
+		max-width: 100%;
+		height: 360px;
+		top: 2100px;
+		background:black;
+		font-family: 'Libre Franklin';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+	}
+.get{
+	width: 100%;
+	padding-top:30px;
+	text-align:center;
+	font-family: 'Libre Franklin';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+	color: khaki;
+	}
+.back{
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	right: 40px;
+	padding-top:235px;
+	}
+#chev{
+	width: 24px;
+	height: 24px;
+	font-family: 'Segoe MDL2 Assets';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 24px;
+	color: khaki;
+	display: none;
+	border: none; 
+    outline: none;
+    background-color: black;
+	}
+.link{
+	width: 61px;
+	height: 161px;
+	padding-left: 41px;
+	padding-top: 30px;
+	color: khaki;
+	}
+.drib{
+	width: 56px;
+	height: 17px;
+	}
+.beh{
+	width: 58px;
+	height: 17px;
+	padding-top: 15px;
+	}
+.cod{
+	width: 61px;
+	height: 17px;
+	padding-top: 30px;
+	}
+.git{
+	width: 46px;
+	height: 17px;
+	padding-top: 30px;
+	}
+.med{
+	width: 54px;
+	height: 17px;
+	padding-top: 30px;
+	}
+.email{
+	width: 131px;
+	height: 39px;
+	padding-left: 41px;
+	padding-top: 50px;
+	color: khaki;
+	}
+	.em{
+	width: 131px;
+	height: 17px;
+	}
+.phone{
+	width: 109px;
+	height: 15px;
+	padding-top: 15px;
+	font-size: 12px;
+	line-height: 15px;
+	}
+.social{
+	width: 67px;
+	height: 25px;
+	padding-left: 55%;
+	padding-bottom: 30px;
+	color: khaki;
+	}
+.li{
+	width: 57px;
+	height: 17px;
+	position: relative;
+	top: -182px;
+	}
+.face{
+	width: 64px;
+	height: 17px;
+	position: relative;
+	top: -167px;
+	}
+.inst{
+	width: 67px;
+	height: 17px;
+	position: relative;
+	top: -151px;
+	}
+.twit{
+	width: 47px;
+	height: 17px;
+	position: relative;
+	top: -135px;
+	}
+	@media(min-width: 1024px){
+		#contact{
+			height: 528px;
+			left: 0px;
+			top: 3049px;
+			font-family: 'Libre Franklin';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 22px;
+		}
+		.get{
+			height: 29px;
+			padding-left: 161px;
+			padding-top: 93px;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 29px;
+			text-align: left;
+		}
+		.back{
+			width: 24px;
+			height: 24px;
+			left: 85%;
+			top: 3440px;
+		}
+		#chev{
+			font-weight: 400;
+			font-size: 60px;
+			line-height: 24px;
+		}
+		.link{
+			width: 78px;
+			height: 166px;
+			padding-left: 167px;
+			padding-top: 90px;
+		}
+		.social{
+			width: 86px;
+			height: 130px;
+			padding-left: 50%;
+			position: relative;
+		}
+		.email{
+			width: 168px;
+			height: 54px;
+			padding-left: 80%;
+			position: relative;
+			bottom: 130px;
+		}
+		.em{
+			width: 168px;
+			height: 22px;
+			font-size: 18px;
+			line-height: 22px;
+		}
+		.phone{
+			width: 136px;
+			height: 18px;
+			top: 36px;
+		}
+		.drib{
+			width: 72px;
+			height: 22px;
+		}
+		.beh{
+			width: 75px;
+			height: 22px;
+			top: 72px;
+		}
+		.cod{
+			width: 78px;
+			height: 22px;
+			top: 102px;
+		}
+		.git{
+			width: 60px;
+			height: 22px;
+			margin-top: 10px;
+		}
+		.med{
+			width: 69px;
+			height: 22px;
+			margin-top: 10px;
+		}
+		.li{
+			width: 73px;
+			height: 22px;
+			top: -130px;
+		}
+		.face{
+			width: 82px;
+			height: 22px;
+			top: -115px;
+		}
+		.inst{
+			width: 86px;
+			height: 22px;
+			top: -100px;
+		}
+		.twit{
+			width: 60px;
+			height: 22px;
+			top: -85px;
+		}
+	}
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#About{
+    max-width:100%;
+    height: 275px;
+    left: 0px;
+    top: 0px;
+    color: black;
+    text-shadow: 2px 2px 5px white;
+    }
+    .Background{
+    background:linear-gradient(to top, rgba(240, 230, 140, 0.4), rgba(240, 230, 140, 0.4)), url('bio.jpg');
+    background-size: cover;
+    height: 275px;
+    text-align: center;
+    min-width:320px;
+    }
+.content-wrap {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.main-menu {
+    position: relative;
+    top: -33px;
+    left: 5px;
+    color: black;
+}
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    align-items: center;
+}
+.menu-list {
+    list-style: none;
+    position: absolute;
+    top: 28px;
+    right: 30px;
+    left: 0;
+    color: black;
+    font-size: 24px;
+    text-shadow: 2px 2px 5px black;
+}
+a, a:active, .a:visited{
+    color: black;
+    text-shadow: 2px 2px 5px black;
+    text-decoration:none;
+    text-shadow: none;
+}
+.main-menu i {
+    cursor: pointer;
+}
+.hide{
+    display: none;
+}
+#iconClose{
+    display: none;
+}
+.logo{
+    padding-top: 36px;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+.text1, .text2, .text3{
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+}
+.text1{
+    padding-top: 15px;
+    font-size: 20px;
+    line-height: 24px;
+}
+.text2{
+    padding-top: 22px;
+    font-size: 13px;
+    line-height: 16px;
+    }
+    @media(min-width: 1024px){
+        #About{
+            top: 0px;
+            height: 960px;
+        }
+        .main-menu i {
+        display: none;
+    }
+    .menu-list {
+        position: static;
+        display: flex;
+    }
+    .menu-list li:not(:last-child) {
+        margin-right: 50px;
+    }
+    .header-menu {
+        height: 60px;
+    }
+    a, a:active, .a:visited{
+    color: black;
+    text-shadow: 2px 2px 5px white;
+}
+    .content-wrap {
+        position: absolute;
+        width: 529px;
+        height: 22px;
+        right: 161px;
+        top: 105px;
+        font-family: 'Libre Franklin';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        float: right;
+    }
+        .Background{
+            height: 960px;
+            background-size: cover;
+        }
+        .logo{
+            width: 116px;
+            height: 29px;
+            padding-left: 161px;
+            padding-top: 93px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+        }
+        .text1{
+            width: 1000px;
+            height: 78px;
+            padding-left: 161px;
+            padding-top: 230px;
+            font-size: 64px;
+            line-height: 78px;
+            display: flex;
+            align-items: center;
+        }
+        .text2{
+            width: 500px;
+            height: 29px;
+            padding-left: 151px;
+            padding-top: 70px;
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+    #Biography{
+    width: 100%;
+    height: 1300px;
+    left: 0px;
+    top: 1240px;
+    background: black;
+    color: khaki;
+    }
+.bio{
+    width: 100%;
+    padding-top: 30px;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    }
+    .t, .n{
+        margin-top: 30px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .leftimg {
+        height: 280px;
+        float:left; 
+        margin: 7px 15px 15px 5px; 
+    }
+    .rightimg {
+        height: 350px;
+        float: right; 
+        margin: 0px 20px 15px 30px; 
+    }
+    @media(min-width: 420px){
+        #Biography{
+            height: 1280px;
+            left: 0px;
+            top: 1240px;
+        }
+        .leftimg {
+        margin: 7px 15px 15px 50px; 
+    }
+    .rightimg {
+        height: 420px;
+        margin: 0px 60px 15px 30px; 
+    }
+    }
+            @media(min-width: 480px){
+        #Biography{
+            height: 1104px;
+            left: 0px;
+            top: 1240px;
+        }
+        .leftimg {
+        margin: 0px 15px 5px 15px;
+    }
+    .rightimg {
+        height: 400px;
+        margin: 0px 15px 15px 5px; 
+    }
+    @media(min-width: 490px){
+        #Biography{
+            height: 985px;
+            left: 0px;
+            top: 1240px;
+        }
+    }
+    @media(min-width: 550px){
+        #Biography{
+            height: 924px;
+            left: 0px;
+            top: 1240px;
+        }
+        .rightimg {
+        height: 420px;
+        margin: 0px 15px 15px 15px; 
+    }
+    }
+    @media(min-width: 680px){
+        #Biography{
+            height: 864px;
+            left: 0px;
+            top: 1240px;
+        }
+    .leftimg {
+        margin: 0px 30px 25px 15px;
+    }
+}
+@media(min-width: 710px){
+        #Biography{
+            height: 894px;
+            left: 0px;
+            top: 1240px;
+        }
+        .leftimg{
+            height: 315px;
+        }
+    .rightimg {
+        height: 450px;
+    }
+    }
+    @media(min-width: 820px){
+        #Biography{
+            height: 734px;
+            left: 0px;
+            top: 1240px;
+        }
+        .leftimg{
+            height: 245px;
+        }
+    .rightimg {
+        height: 400px;
+    }
+    }
+            @media(min-width: 1024px){
+        #Biography{
+            height: 1020px;
+            left: 0px;
+            top: 2527px;
+        }
+        .bio{
+            height: 29px;
+            padding-left: 161px;
+            padding-top: 93px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: left;
+        }
+    .n, .t{
+        padding-top: 90px;
+        margin-right: 80px;
+        margin-left: 20px;
+        font-size: 18px;
+            line-height: 30px;
+    }
+    .leftimg {
+        height: 350px;
+        float:left; 
+        margin: -20px 15px 25px 100px; 
+    }
+    .rightimg {
+        height: 450px;
+        float: right;
+        margin: -20px 30px 15px 30px; 
+    }
+    .t{
+        margin-left: 160px;
+    }
+}
+    #Skills{
+    max-width:100%;
+    height: 600px;
+    left: 0px;
+    top: 568px;
+    background: Khaki;
+    }   
+.skill{
+    width: 100%;
+    padding-top:30px;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 25px;
+    color: black;
+    text-align: center;
+    }
+    .ski{
+    text-align:center;
+    }
+img{
+    height: 300px;
+    text-align: center;
+    margin-top: 30px;
+    }
+.pro{
+    display:flex;
+    justify-content:center;
+    height: 25px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    color: black;
+    }
+.profile{
+    position: relative;
+    right: 20px;
+}
+.Engineer{
+    font-weight: 400;
+    position: relative;
+    left:5px;
+    }
+    .fro{
+    height: 30px;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    }
+.tol{
+    display:flex;
+    justify-content:center;
+    height: 25px;
+    padding-top: 10px;
+    color: black;
+    margin-right:20px ;
+    }         
+.tool{
+    width: 31px;
+    height: 25px;
+    position: relative;
+    right: 40px;
+    }
+.boot{
+    height: 25px;
+    position: relative;
+    left: 10px;
+    }
+.tols{
+    display:flex;
+    justify-content:center;
+    height: 25px;
+    padding-top: 10px;
+    color: black;
+    margin-right:20px ;
+    }         
+.tools{
+    width: 31px;
+    height: 25px;
+    position: relative;
+    right: 100px;
+    }
+.adobe{
+    height: 25px;
+    position: relative;
+    right: 50px;
+    }
+.tolse{
+    display:flex;
+    justify-content:center;
+    height: 25px;
+    padding-top: 10px;
+    color: black;
+    margin-right:20px ;
+    }       
+.toolse{
+    width: 31px;
+    height: 25px;
+    position: relative;
+    right: 33px;
+    }
+.pen{
+    height: 25px;
+    position: relative;
+    left: 18px;
+    }  
+.boot, .adobe, .pen{
+font-weight: 400;
+}
+button{
+	margin-left: 45%;
+	margin-top: 50px;
+	background-color: khaki;
+	border: khaki;
+	border-bottom:0.1rem solid black;
+	font-size: 14px;
+} 
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: khaki;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+@media(min-width: 1024px){
+    #Skills{
+            height: 693px;
+            left: 0px;
+            top: 1312px;
+    }
+    .skill{
+            width: 400px;
+            height: 29px;
+            padding-left: 120px;
+            padding-top: 93px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+    }
+    .tanya{
+    width: 290px;
+    height: 440px;
+    position: absolute;
+    left: 161px;
+    top: 160px;
+    }
+    .profile, .tool, .tools, .toolse{
+    height: 25px;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 25px;
+    }
+    .profile{
+    margin-left: 385px;
+    margin-top: 133px;
+    }
+    .Engineer{
+    height: 25px;
+    padding-left: 20px;
+    padding-top: 133px;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    }
+    .boot, .adobe, .pen{
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    }
+    .fro{
+    margin-left:480px;
+    padding-top: 160px;
+        }
+    .tool, .tools, .toolse, .boot, .adobe, .pen{
+        padding-top: 30px;  }
+        .tols{
+            padding-top: 30px;
+        }
+        .tolse{
+            padding-top: 50px;
+        }
+    .tool{
+        position: relative;
+        right:85px;
+    }
+    .boot{
+        padding-right: 70px;
+    }
+    .tools{
+        position: relative;
+        right:145px;
+    }
+    .adobe{
+        padding-right: 130px;
+    }
+    .toolse{
+        position: relative;
+        right: 75px;
+    }
+    .pen{
+        position: relative;
+        padding-right: 60px;
+    }
+    button{
+    	font-size: 17px;
+    	margin-top: 200px;
+    }
+    .modal{
+    	font-size: 19px;
+    }
+    }
+      .animated {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 2.5s ease, transform 2.5s ease;
+        }
+        .animated.in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+      * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#Gallery{
+	max-width:100%;
+	height: 275px;
+	left: 0px;
+	top: 0px;
+	color: black;
+	text-shadow: 2px 2px 5px white;
+	}
+	.Background{
+	background:linear-gradient(to top, rgba(240, 230, 140, 0.4), rgba(240, 230, 140, 0.4)), url('gallery.jpg');
+	background-size: cover;
+	height: 275px;
+	text-align: center;
+	min-width:320px;
+	}
+.content-wrap {
+	max-width: 780px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.main-menu {
+	position: relative;
+	top: -33px;
+	left: 5px;
+	color: black;
+}
+.header-menu {
+	display: flex;
+	justify-content: space-between;
+	height: 20px;
+	align-items: center;
+}
+.menu-list {
+	list-style: none;
+	position: absolute;
+	top: 28px;
+	right: 30px;
+	left: 0;
+	color: black;
+	font-size: 24px;
+	text-shadow: 2px 2px 5px black;
+}
+a, a:active, .a:visited{
+    color: black;
+    text-shadow: 2px 2px 5px black;
+	text-decoration:none;
+	text-shadow: none;
+}
+.main-menu i {
+	cursor: pointer;
+}
+.hide{
+	display: none;
+}
+#iconClose{
+	display: none;
+}
+.logo{
+	padding-top: 36px;
+	font-family: 'Libre Franklin';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+}
+.text1, .text2, .text3{
+	font-family: 'Libre Franklin';
+	font-style: normal;
+	font-weight: 400;
+	color: black;
+}
+.text1{
+	padding-top: 15px;
+	font-size: 20px;
+	line-height: 24px;
+}
+.text2{
+	padding-top: 22px;
+	font-size: 13px;
+	line-height: 16px;
+	}
+	@media(min-width: 1024px){
+		#Gallery{
+			top: 0px;
+			height: 768px;
+		}
+		.main-menu i {
+		display: none;
+	}
+	.menu-list {
+		position: static;
+		display: flex;
+	}
+	.menu-list li:not(:last-child) {
+		margin-right: 50px;
+	}
+	.header-menu {
+		height: 60px;
+	}
+	a, a:active, .a:visited{
+    color: black;
+    text-shadow: 2px 2px 5px white;
+}
+	.content-wrap {
+		position: absolute;
+		width: 529px;
+		height: 22px;
+		right: 161px;
+		top: 105px;
+		font-family: 'Libre Franklin';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 22px;
+	}
+		.Background{
+			height: 768px;
+			background-size: cover;
+		}
+		.logo{
+			width: 116px;
+			height: 29px;
+			padding-left: 161px;
+			padding-top: 93px;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 29px;
+		}
+		.text1{
+			width: 1000px;
+			height: 78px;
+			padding-left: 161px;
+			padding-top: 230px;
+			font-size: 64px;
+			line-height: 78px;
+			display: flex;
+			align-items: center;
+		}
+		.text2{
+			width: 500px;
+			height: 29px;
+			padding-left: 151px;
+			padding-top: 70px;
+			font-size: 24px;
+			line-height: 29px;
+		}
+	}
+	#Drawing{
+	width: 100%;
+	height: 504px;
+	left: 0px;
+	top: 1240px;
+	background: black;
+	color: Khaki;
+	}
+.draw{
+	width: 100%;
+	padding-top: 30px;
+	font-family: 'Libre Franklin';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	}
+.container {\
+	margin: 20px auto;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    width: 300px;
+    -webkit-overflow-scrolling: touch; 
+}
+.slide {
+  flex: none;
+  scroll-snap-align: start;
+  width: 350px;
+  height: 405px;
+  text-align: center;
+}
+.photo{
+	height: 470px;
+	width: 330px;
+  height: 350px;
+}
+.text{
+	padding-top: 10px;
+	font-size: 17px;
+	line-height: 25px;
+	padding-right: 30px;
+}
+		@media(min-width: 1024px){
+		#Drawing{
+			height: 722px;
+			left: 0px;
+			top: 2527px;
+		}
+		.draw{
+			height: 29px;
+			padding-left: 161px;
+			padding-top: 93px;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 29px;
+			text-align: left;
+		}
+		.photo{
+	height: 470px;
+	width: 330px;
+  height: 350px;
+}
+.text{
+	padding-top: 10px;
+	font-size: 17px;
+	line-height: 25px;
+}
+		.container {
+			padding-top: 50px;
+			width: 1000px;
+}
+.slide {
+  flex: none;
+  scroll-snap-align: start;
+  width: 513px;
+  height: 500px;
+  text-align: center;
+}
+	}
+    	#Tshirt{
+	width: 100%;
+	height: 504px;
+	left: 0px;
+	top: 1240px;
+	background: khaki;
+	color: black;
+	}
+.tsh{
+	width: 100%;
+	padding-top: 30px;
+	font-family: 'Libre Franklin';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	}
+.cont{
+	margin: 20px auto;
+	display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    width: 300px;
+   -webkit-overflow-scrolling: touch; 
+}
+		@media(min-width: 1024px){
+		#Tshirt{
+			height: 722px;
+			left: 0px;
+			top: 2527px;
+
+		}
+		.tsh{
+			height: 29px;
+			padding-left: 161px;
+			padding-top: 93px;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 29px;
+			text-align: left;
+		}
+		.cont{
+			padding-top: 50px;
+  width: 1000px;
+}
+	}
+
+   #Idea{
+	width: 100%;
+	height: 554px;
+	left: 0px;
+	top: 1644px;
+	background: black;
+	}
+.kom{
+	width: 100%;
+	padding-top: 30px;
+	font-family: 'Libre Franklin';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+	color: khaki;
+	text-align: center;
+	 }
+.comment-container {
+    max-width: 600px;
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 35%;
+    color: khaki;
+}
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+input{
+	 width: 60%;
+    height: 35%;
+}
+textarea{
+    width: 100%;
+    height: 35%;
+}
+button {
+    background-color: khaki;
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color:orange;
+}
+#vid{
+	padding-top: 20px;
+}
+#commentsList{
+	margin-top: 20px;
+	font-size: 14px;
+	line-height: 29px;
+	color: khaki;
+	text-align: center; 
+}
+		@media(min-width: 1024px){
+		#Idea{
+			height: 822px;
+			left: 0px;
+			top: 2527px;
+		}
+		.kom{
+			height: 29px;
+			padding-left: 161px;
+			padding-top: 93px;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 29px;
+			text-align: left;
+		}
+.comment-container {
+    max-width: 600px;
+    margin-top: 70px;
+			font-size: 19px;
+			line-height: 29px;
+}
+form {
+    margin-top: 20px;
+}
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+			font-size: 20px;
+			line-height: 29px;
+}
+input{
+	 width: 250px;
+    height: 50px;
+}
+textarea{
+    width: 100%;
+    height: 35%;
+}
+button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color:orange;
+}
+	}
+	
+	* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#Books{
+	max-width:100%;
+	height: 275px;
+	left: 0px;
+	top: 0px;
+	color: black;
+	text-shadow: 2px 2px 5px white;
+	}
+	.Background{
+	background:linear-gradient(to top, rgba(240, 230, 140, 0.4), rgba(240, 230, 140, 0.4)), url('book.jpg');
+	background-size: cover;
+	height: 275px;
+	text-align: center;
+	min-width:320px;
+	}
+.content-wrap {
+	max-width: 780px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.main-menu {
+	position: relative;
+	top: -33px;
+	left: 5px;
+	color: black;
+}
+.header-menu {
+	display: flex;
+	justify-content: space-between;
+	height: 30px;
+	align-items: center;
+}
+.menu-list {
+	list-style: none;
+	position: absolute;
+	top: 28px;
+	right: 30px;
+	left: 0;
+	color: black;
+	font-size: 24px;
+	text-shadow: 2px 2px 5px black;
+}
+a, a:active, .a:visited{
+    color: DarkGoldenRod;
+    text-shadow: 2px 2px 5px black;
+	text-decoration:none;
+	text-shadow: none;
+}
+.main-menu i {
+	cursor: pointer;
+}
+.hide{
+	display: none;
+}
+#iconClose{
+	display: none;
+}
+.logo{
+	padding-top: 36px;
+	font-family: 'Libre Franklin';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+}
+.text1, .text2, .text3{
+	font-family: 'Libre Franklin';
+	font-style: normal;
+	font-weight: 400;
+	color: black;
+}
+.text1{
+	padding-top: 15px;
+	font-size: 20px;
+	line-height: 24px;
+}
+.text2{
+	padding-top: 22px;
+	font-size: 13px;
+	line-height: 16px;
+	}
+	@media(min-width: 1024px){
+		#Books{
+			top: 0px;
+			height: 768px;
+		}
+		.main-menu i {
+		display: none;
+	}
+	.menu-list {
+		position: static;
+		display: flex;
+	}
+	.menu-list li:not(:last-child) {
+		margin-right: 50px;
+	}
+	.header-menu {
+		height: 60px;
+	}
+	a, a:active, .a:visited{
+    color: khaki;
+}
+	.content-wrap {
+		position: absolute;
+		width: 529px;
+		height: 22px;
+		right: 161px;
+		top: 105px;
+		font-family: 'Libre Franklin';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 22px;
+	}
+		.Background{
+			height: 768px;
+			background-size: cover;
+		}
+		.logo{
+			width: 116px;
+			height: 29px;
+			padding-left: 161px;
+			padding-top: 93px;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 29px;
+		}
+		.text1{
+			width: 1000px;
+			height: 78px;
+			padding-left: 161px;
+			padding-top: 230px;
+			font-size: 64px;
+			line-height: 78px;
+			display: flex;
+			align-items: center;
+		}
+		.text2{
+			width: 500px;
+			height: 29px;
+			padding-left: 151px;
+			padding-top: 70px;
+			font-size: 24px;
+			line-height: 29px;
+		}
+	}
+	#Book{
+	width: 100%;
+	height: 804px;
+	left: 0px;
+	top: 1240px;
+	background: black;
+	color: Khaki;
+	}
+.portf{
+	width: 100%;
+	padding-top: 30px;
+	font-family: 'Libre Franklin';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	}
+	#rotator {
+            text-align: center;
+        }
+        #image-container {
+            position: relative;
+            top: 50px;
+        }
+        #image-container img {
+            max-width: 100%;
+            max-height: 500px;
+        }
+        #image-info{
+        	margin-top: 55px;
+        	margin-left: 10px;
+        	margin-right: 10px;
+        }
+        #prev, #next{
+        	color: khaki;
+            background-color: black;
+            border:none;
+            font-size: 35px;
+            margin: 53px;
+        }
+	@media(min-width: 1024px){
+		#Book{
+			height: 722px;
+			left: 0px;
+			top: 2005px;
+		}
+		.portf{
+			height: 29px;
+			padding-left: 161px;
+			padding-top: 93px;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 29px;
+			text-align: left;
+		}
+		#rotator {
+            text-align: left;
+        }
+         #image-info{
+        	margin-top: 50px;
+        	margin-left: 550px;
+        	margin-right: 50px;
+        	font-weight: 700;
+			font-size: 24px;
+			line-height: 29px;
+        }
+        #image-container {
+            position: relative;
+        }
+        #image-container img {
+            max-width: 100%;
+            max-height: 400px;
+            height: 900px;
+            padding-left: 150px;
+           margin-bottom: -450px;
+        }
+        #nav-buttons {
+            margin-top: -10px;
+            padding-top: 120px;
+            padding-left: 650px;
+        }
+    }
+    #Unfinished{
+	width: 100%;
+	height: 760px;
+	left: 0px;
+	top: 2044px;
+	background: khaki;
+	color: black;
+	}
+.unfini{
+	width: 100%;
+	padding-top: 30px;
+	font-family: 'Libre Franklin';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	}
+	#rot {
+            text-align: center;
+        }
+        #imcontainer {
+            position: relative;
+            top: 50px;
+        }
+        #imcontainer img {
+            max-width: 100%;
+            max-height: 500px;
+        }
+        #info{
+        	margin-top: 25px;
+        	margin-left: 10px;
+        	margin-right: 10px;
+        }
+        .ano{
+        	margin-top: 5px;
+        	margin-left: 15px;
+        	margin-right: 15px;
+        }
+	@media(min-width: 1024px){
+		#Unfinished{
+			height: 732px;
+			left: 0px;
+			top: 2727px;
+		}
+		.unfini{
+			height: 29px;
+			padding-left: 161px;
+			padding-top: 93px;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 29px;
+			text-align: left;
+		}
+		#rot{
+            text-align: left;
+        }
+         #info{
+        	margin-top: 40px;
+        	margin-left: 550px;
+        	margin-right: 50px;
+        	font-weight: 700;
+			font-size: 24px;
+			line-height: 29px;
+        }
+        #imcontainer {
+            position: relative;
+        }
+        #imcontainer img {
+            max-width: 100%;
+            max-height: 400px;
+            height: 900px;
+            padding-left: 150px;
+           margin-bottom: -450px;
+        }
+        .ano{
+        	margin-top: 5px;
+        	margin-left: 550px;
+        	margin-right: 40px;
+        	font-weight: 700;
+			font-size: 24px;
+			line-height: 29px;
+        }
+    }
+   #Idea{
+	width: 100%;
+	height: 554px;
+	left: 0px;
+	top: 1644px;
+	background: black;
+	}
+.kom{
+	width: 100%;
+	padding-top: 30px;
+	font-family: 'Libre Franklin';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+	color: khaki;
+	text-align: center;
+	 }
+.comment-container {
+    max-width: 600px;
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 35%;
+    color: khaki;
+}
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+input{
+	 width: 60%;
+    height: 35%;
+}
+textarea{
+    width: 100%;
+    height: 35%;
+}
+button {
+    background-color: khaki;
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color:orange;
+}
+#comments{
+	margin-top: 20px;
+}
+#commentsList{
+	margin-top: 20px;
+	font-size: 14px;
+	line-height: 29px;
+	color: khaki;
+	text-align: center;	 
+}
+		@media(min-width: 1024px){
+		#Idea{
+			height: 822px;
+			left: 0px;
+			top: 2527px;
+
+		}
+		.kom{
+			height: 29px;
+			padding-left: 161px;
+			padding-top: 93px;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 29px;
+			text-align: left;
+		}
+.comment-container {
+    max-width: 600px;
+    margin-top: 70px;
+			font-size: 19px;
+			line-height: 29px;
+}
+form {
+    margin-top: 20px;
+}
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+			font-size: 20px;
+			line-height: 29px;
+}
+input{
+	 width: 250px;
+    height: 50px;
+}
+textarea{
+    width: 100%;
+    height: 35%;
+}
+button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color:orange;
+}
+	}
+
+	* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#Error{
+	max-width:100%;
+	height: 800px;
+	left: 0px;
+	top: 0px;
+	color: black;
+	text-shadow: 2px 2px 5px white;
+	}
+	.Background{
+	background:linear-gradient(to top, rgba(240, 230, 140, 0.4), rgba(240, 230, 140, 0.4)), url('many.jpg');
+	background-size: cover;
+	height: 800px;
+	text-align: center;
+	min-width:320px;
+	}
+.content-wrap {
+	max-width: 780px;
+	margin: 0 auto;
+	padding: 0 20px;
+	color: black;
+}
+.main-menu {
+	position: relative;
+	top: -33px;
+	left: 5px;
+	color: black;
+}
+.header-menu {
+	display: flex;
+	justify-content: space-between;
+	height: 30px;
+	align-items: center;
+}
+.menu-list {
+	list-style: none;
+	position: absolute;
+	top: 28px;
+	right: 30px;
+	left: 0;
+	color: black;
+	text-shadow: 2px 2px 5px black;
+	font-size: 21px;
+}
+a, a:active, .a:visited{
+    color: black;
+    text-shadow: 2px 2px 5px black;
+	text-decoration:none;
+	text-shadow: none;
+}
+.main-menu i {
+	cursor: pointer;
+}
+.hide{
+	display: none;
+}
+#iconClose{
+	display: none;
+}
+.logo{
+	padding-top: 36px;
+	font-family: 'Libre Franklin';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+}
+.text1, .text2{
+	font-family: 'Libre Franklin';
+	font-style: normal;
+	padding-top: 200px;
+}
+.text1{
+	margin: auto;
+	font-size: 20px;
+	line-height: 24px;
+}
+.text2, p{
+	padding-top: 20px;
+	font-size: 17px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+	@media(min-width: 1024px){
+		#Error{
+			top: 0px;
+			height: 1000px;
+		}
+		.main-menu i {
+		display: none;
+	}
+	.menu-list {
+		position: static;
+		display: flex;
+	}
+	.menu-list li:not(:last-child) {
+		margin-right: 50px;
+	}
+	.header-menu {
+		height: 60px;
+	}
+	.content-wrap {
+		position: absolute;
+		width: 529px;
+		height: 22px;
+		right: 161px;
+		top: 105px;
+		font-family: 'Libre Franklin';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 22px;
+	}
+		.Background{
+			height: 1000px;
+			background-size: cover;
+		}
+		.logo{
+			width: 116px;
+			height: 29px;
+			padding-left: 161px;
+			padding-top: 93px;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 29px;
+		}
+		.text1{
+			width: 1000px;
+			height: 78px;
+			padding-top: 230px;
+			margin-left: 220px;
+			font-size: 64px;
+			line-height: 78px;
+			display: flex;
+			align-items: center;
+		}
+		.text2{
+			width: 1000px;
+			height: 78px;
+			padding-left: 221px;
+			padding-top: 250px;
+			font-size: 35px;
+			line-height: 78px;
+			display: flex;
+			align-items: center;
+		}
+		p{
+			width: 1000px;
+			height: 78px;
+			padding-left: 230px;
+			padding-top: 100px;
+			font-size: 30px;
+			line-height: 78px;
+			display: flex;
+			align-items: center;
+		}
+	}
+	  
